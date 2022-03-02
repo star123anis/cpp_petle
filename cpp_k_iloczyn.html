@@ -1,0 +1,36 @@
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<textarea cols="30" rows="30">
+#include <cstdlib>
+#include <iostream>
+using namespace std; 
+int main(int argc, char *argv[])
+//Oblicz iloczyn liczb od liczby dolnej do liczby górnej ( wczytanych z klawiatury).
+//Wskazówka zmienna suma ( poprzednie zadanie) zastap zmienna np. iloczyn_kow i nadaj jej wartosc jeden
+
+{	
+
+int gora_rog;
+int dol_rog;
+int iloczyn_rog=1;
+
+cout<<"Podaj gorna granice obliczania iloczynu"<<endl;
+cin>>gora_rog;
+cout<<"Podaj dolna granice obliczania iloczynu"<<endl;
+cin>>dol_rog;
+
+for(int i=dol_rog; i<=gora_rog; i++)
+{
+iloczyn_rog=iloczyn_rog*i;
+}
+cout<<"iloczyn tych liczb wynosi"<<iloczyn_rog<<endl;
+system("PAUSE");
+ return EXIT_SUCCESS; 
+}
+
+</textarea>
+</body>
+</html>

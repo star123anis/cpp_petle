@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<textarea cols="30" rows="30">
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+ 
+int main(int argc, char** argv)
+{
+//napisz program ktory po wczytaniu dwoch liczb obliczy sume liczb parzystych miedzy tymi liczbami.
+
+    
+int gora_rog;
+int dol_rog;
+int suma_rog=0;
+
+cout<< "Podaj gorna granice obliczania sumy: ";
+cin>>gora_rog;
+cout<<"Podaj dolna granice obliczania sumy: ";
+cin>>dol_rog;
+
+for(int i=dol_rog;i<=gora_rog;i++)
+{
+if( (i) % 2==0)	
+{
+suma_rog=suma_rog+i;
+}
+}
+
+cout<<"suma liczb miedzy tymi liczbami wynosi "<<suma_rog<<endl;
+ 
+system("PAUSE");
+return EXIT_SUCCESS;
+}
+
+</textarea>
+</body>
+</html>

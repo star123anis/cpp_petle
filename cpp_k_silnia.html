@@ -1,0 +1,34 @@
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<textarea cols="30" rows="30">
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+int main(int argc,char *argv[]) {
+//Obliczanie silni.
+//Jest to iloczyn liczb od 1 do n ale 0!=1
+//np. 5!=1*2*3*4*5 i wynik 5!=120
+
+int n_rog;
+int silnia_rog=1;
+
+cout<<"podaj liczbe n "<<endl;
+cin>>n_rog;
+
+for( int i=1; i<=n_rog; i++)
+{
+silnia_rog=silnia_rog*i;
+}
+cout<<n_rog<<"!="<<silnia_rog;
+
+
+
+system("PAUSE");
+return EXIT_SUCCESS;
+}
+</textarea>
+</body>
+</html>

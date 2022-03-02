@@ -1,0 +1,61 @@
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<textarea cols="30" rows="30">
+#include <cstdlib>
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main(int argc, char *argv[])
+{
+//Wczytac dwie liczby sprawdzic czy sa pierwsze. Jesli sa podac ich sume na ekranie. Sprawdzic czy ta suma jest parzysta."
+
+ int raz_rog;
+ int suma_rog;
+ int k=0;
+ int dwa_rog;
+ int n=0;
+ 
+ cout<<"podaj pierwsza liczbe naturalna";
+ cin>>raz_rog;
+ cout<<"podaj druga liczbe naturalna";
+ cin>>dwa_rog;
+ for(int i=2; i<=sqrt (raz_rog); ++i)
+ for(int i=2; i<=sqrt (dwa_rog); ++i)
+ {
+if ((raz_rog) % i==0)
+if ((dwa_rog) % i==0)
+{
+k=1;
+n=1;
+cout<<"liczba "<<raz_rog<<" to nie jest liczba pierwsza jest podzielna przez "
+<<i<<","<<dwa_rog<<"tez nie jest pierwsza jest podzielna przez"<<i<<"\n";
+ }
+ }
+ {
+ if ( k==0);
+ if ( n==0);
+ suma_rog=(raz_rog+dwa_rog);
+ if (suma_rog%2==0)
+ {
+ cout<<"liczba "<<raz_rog<<" to jest liczba pierwsza,"<<dwa_rog<<"  tez jest liczba pierwsza, ich suma wynosi"<<suma_rog<<",jest parzysta"<<"\n";
+}
+}
+{
+if ( k==0);
+if ( n==0);
+suma_rog=(raz_rog+dwa_rog);
+if (suma_rog%2==1)
+ {
+cout<<"liczba "<<raz_rog<<" to jest liczba pierwsza,"<<dwa_rog<<"  tez jest liczba pierwsza, ich suma wynosi"<<suma_rog<<",jest nieparzysta"<<"\n";
+}
+}
+ system("PAUSE");
+ return EXIT_SUCCESS;
+}
+
+</textarea>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<textarea cols="30" rows="30">
+
+
+
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+int main(int argc, char** argv)
+ // napisz program , który po wczytaniu dwóch liczb obliczy sume liczb miedzy tymi liczbami
+
+{
+int gora_rog;
+int dol_rog;
+int suma_rog=0;
+cout<<"wprowadz liczbe z gornej granicy"<<endl;
+cin>>gora_rog;
+cout<<"wprowadz liczbe z dolnej granicy"<<endl;
+cin>>dol_rog;
+
+for(int i=dol_rog; i<=gora_rog; i++)
+{
+suma_rog=suma_rog+i;
+}
+cout<<"suma liczb miedzy tymi liczbami wynosi"<<suma_rog<<endl;
+
+system("PAUSE");	
+return EXIT_SUCCESS;
+}
+
+</textarea>
+</body>
+</html>

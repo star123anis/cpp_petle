@@ -1,0 +1,54 @@
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<textarea cols="30" rows="30">
+#include <cstdlib>
+#include <iostream>
+#include <windows.h>
+using namespace std;
+
+void gotoxy(int x, int y)
+{
+COORD coord;
+coord.X = x;
+coord.Y = y;
+SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
+}
+int main(int argc, char *argv[])
+{
+
+
+int x;
+int y;
+int D_rog;
+
+
+cout<<" Podaj zmienna (kolumne ekranu) x="; 
+cin>>x;
+cout<<" Podaj zmienna (wiersz ekranu) y=";
+cin>>y;
+cout<<" Podaj dlugosc linii D=";
+cin>>D_rog;
+
+for (int i=1; i<=D_rog/2; i++) 
+{
+gotoxy(x+i-D_rog/2,y);
+cout<<"-";
+}
+
+{
+for (int i=1; i<=D_rog/2; i++)
+{
+gotoxy(x-y-D_rog/2,i);
+cout<<"-";
+}
+
+}
+system("PAUSE");
+return EXIT_SUCCESS;
+}
+</textarea>
+</body>
+</html>

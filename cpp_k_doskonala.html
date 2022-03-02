@@ -1,0 +1,40 @@
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<textarea cols="30" rows="30">
+#include <cstdlib>
+#include <iostream>
+#include <cmath>
+using namespace std;
+//Napisz program, który po wczytaniu liczby sprawdzi czy jest ona doskonala, metoda sumowania podzielników (w petli) i sprawdzania czy suma jest równa wczytanej liczbie.
+
+bool doskonala(int n)
+{
+int a=1;
+int b=sqrt(n);
+
+for(int i=2; i<=b; i++)
+if(n%i == 0)
+a+= i + n/i;
+if(n == b*b) a-=b;
+if(n == a) return 1;
+return 0;	
+}
+int main( int argc, char *argv[])
+{
+int n;
+cout<<"Podaj liczbe: ";
+cin>>n;
+if(doskonala(n))
+cout<<"Liczba "<<n<<" jest doskonala"<<endl;
+else
+cout<<"Liczba "<<n<<" nie jest doskonala"<<endl;
+system("PAUSE");
+ return EXIT_SUCCESS;
+}
+
+</textarea>
+</body>
+</html>
