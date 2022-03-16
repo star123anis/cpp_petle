@@ -1,0 +1,48 @@
+<html>
+<head>
+<meta charset="utf-8">
+</head>  
+<body>
+<textarea cols="30" rows="30">
+
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char *argv[])
+{
+    setlocale(LC_CTYPE, "Polish");
+    int m,n,r,m1,n1;
+    
+    system("chcp 1250");
+    do
+    {
+    cout<<"n= ";
+    cin>>n;
+    
+    cout<<"m= ";
+    cin>>m;
+    
+    if (n<m)
+    {cout<<"n musi byc >= m"<<endl;}
+    m1=m;
+    n1=n;
+    }
+    while(!(n>=m));
+    
+    do
+    {
+    r=(n%m), n=m, m=r;
+    }
+    while (!(m==0));
+    
+    cout<<"NWD=("<<n1<<","<<m1<<")="<<n<<endl;
+    
+    system("PAUSE");
+    return EXIT_SUCCESS;
+}
+
+</textarea>
+</body>
+</html>
