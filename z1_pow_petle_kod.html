@@ -1,0 +1,47 @@
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<textarea cols="30" rows="30">
+
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char *argv[])
+{
+int m,n,r,m1,n1;
+system("chcp 1250");
+do
+{
+    cout<<"n>=m"<<endl;
+    cout<<"Podaj n="<<endl;
+    cin>>n;
+    cout<<"Podaj m="<<endl;
+    cin>>m;
+    if (n<m)
+    {
+    cout<<"n musi być >=m"<<endl;
+    }
+m1=m;
+n1=n;
+}
+while(!(n>=m));
+
+do
+{
+r=(n%m), n=m, m=r;
+}
+while(!(m==0));
+cout<<"NWD=("<<n1<<","<<m1<<")="<<n<<endl;
+    system("PAUSE");
+    return EXIT_SUCCESS;
+}
+// Lista kroków dla algorytmu Euklidesa
+// Krok 1 Jeśli m=0, to n jest szukanym dzielnikiem. Zakończ algorytm
+// Krok 2 r=(n mod m), n=m, m=r. Wróc do kroku 1
+</textarea>
+</body>
+</html>
