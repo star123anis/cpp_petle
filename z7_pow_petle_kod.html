@@ -9,63 +9,93 @@
 #include <math.h>
 using namespace std;
 int main(int argc, char** argv) {
-	
-	int raz;
-	
-	cout<<"podaj liczbe"<<endl;
-	cin>>raz;
-	for(int i=2; i<=sqrt (raz); ++i)
-	{
-		if (raz%i==0)
-		{
-			cout<<raz<<"to nie jest liczba pierwsza"<<endl;
-		}
-		else
-		{
-			cout<<raz<<"to jest liczba pierwsza"<<endl;
-		}
-	}
-	
-	int dwa=raz+2;
-	for(int i=2; i<=sqrt (dwa); ++i)
-	{
-		if (dwa%i==0)
-		{
-			cout<<dwa<<"to nie jest liczba pierwsza"<<endl;
-		}
-		else
-		{
-			cout<<dwa<<"to jest liczba pierwsza"<<endl;
-		}
-	}
-	int trzy=raz+6;
-	for(int i=2; i<=sqrt (trzy); ++i)
-	{
-		if (trzy%i==0)
-		{
-			cout<<trzy<<"to nie jest liczba pierwsza"<<endl;
-		}
-		else
-		{
-			cout<<trzy<<"to jest liczba pierwsza"<<endl;
-		}
-	}
-	int cztery=raz+8;
-	for(int i=2; i<=sqrt (cztery); ++i)
-	{
-		if (cztery%i==0)
-		{
-			cout<<cztery<<"to nie jest liczba pierwsza"<<endl;
-		}
-		else
-		{
-			cout<<cztery<<"to jest liczba pierwsza"<<endl;
-		}
-	}
-	
-	system("PAUSE");
-	return EXIT_SUCCESS;
+
+    int raz;
+    int i=0;
+    bool pierwsza_1;
+    bool pierwsza_2;
+    bool pierwsza_3;
+    bool pierwsza_4;
+    
+    cout<<"podaj liczbe"<<endl;
+    cin>>raz;
+    for(int i=2; i<=sqrt (raz); ++i)
+    {
+        if ((raz)%i==0)
+        {
+            bool pierwsza_1=true;
+        }
+        else
+        {
+            bool pierwsza_1=false;
+        }
+    }
+
+    int dwa=raz+2;
+    for(int i=2; i<=sqrt (dwa); ++i)
+    {
+        if ((dwa)%i==0)
+        {
+           bool pierwsza_3=true;
+        }
+        else
+        {
+            bool pierwsza_2=false;
+        }
+    }
+    int trzy=raz+6;
+    for(int i=2; i<=sqrt (trzy); ++i)
+    {
+        if ((trzy)%i==0)
+        {
+           bool pierwsza_3=true;
+        }
+        else
+        {
+         bool pierwsza_3=false;
+        }
+    }
+    int cztery=raz+8;
+    for(int i=2; i<=sqrt (cztery); ++i)
+    {
+        if ((cztery)%i==0)
+        {
+        bool pierwsza_4=true;
+        }
+        else
+        {
+            bool pierwsza_4=false;
+        }
+    }
+if(pierwsza_1){
+    cout<<raz<<" jest pierwsza"<<endl; 
 }
+else{
+     cout<<raz<<" nie jest pierwsza"<<endl;
+}
+if(pierwsza_2){
+    cout<<dwa<<" jest pierwsza"<<endl;
+}
+else{
+     cout<<dwa<<" nie jest pierwsza"<<endl;
+}
+if(pierwsza_3){
+    cout<<trzy<<" jest pierwsza"<<endl;
+}
+else{
+     cout<<trzy<<" nie jest pierwsza"<<endl;
+}
+if(pierwsza_4){
+    cout<<cztery<<" jest pierwsza"<<endl;
+}
+else{
+     cout<<cztery<<" nie jest pierwsza"<<endl;
+}
+
+    system("PAUSE");
+    return EXIT_SUCCESS;
+}
+
 </textarea>
 </body>
 </html>
