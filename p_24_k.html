@@ -1,0 +1,31 @@
+<html>
+ <head>
+ <meta charset="utf-8">
+ </head>
+ <body>
+ Przykład demonstruje wczytywanie do tablicy siedmioelementowej jednowymiarowej oraz wypisanie wczytanych wartości
+ <textarea cols="30" rows="30">
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+int main(int argc, char *argv[])
+{
+ int a[7];
+ for(int i=0;i<=6;i++)
+ {
+ cout<<"podaj A["<<i<<"]=";
+ cin>>a[i];
+ }
+ cout<<"w tablicy A jest"<<"\n"; 
+ for(int i=0;i<=6;i++)
+ {
+ cout<<"w komorce A["<<i<<"]="<<a[i]<<"\n";
+ 
+ }
+ system("PAUSE");
+ return EXIT_SUCCESS;
+}
+
+ </textarea>
+ </body>
+ </html>
