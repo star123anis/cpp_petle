@@ -1,0 +1,40 @@
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<textarea cols="30" rows="30">
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+int main(int argc, char *argv[])
+{
+//Napisac program obliczajacy sume oraz jego srednia arytmetyczna wczytanego ciagu do tablicy siedmioelementowej. Wykonaj schemat blokowy
+int a[7];
+int suma=0;
+float srednia=0;
+int licznik=0;
+
+for(int i=0;i<=6;i++)
+{
+cout<<"podaj A["<<i<<"]=";
+cin>>a[i];
+}
+
+for(int i=0;i<=6;i++)
+{
+suma=suma+a[i];
+licznik=i;
+}
+
+srednia=suma/(licznik);
+
+cout<<"suma="<<suma<<endl;
+cout<<"srednia="<<srednia<<endl;
+
+system("PAUSE");
+return EXIT_SUCCESS;
+}
+</textarea>
+</body>
+</html>
