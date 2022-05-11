@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+<body>
+  <textarea cols="30" rows="30">
+
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+int main(int argc, char *argv[])
+{
+ int  L_mniejsze=0;
+ int  L_wieksze=0;
+ int L_rowne=0;
+ int a[8];
+ for(int i=0;i<=7;i++)
+ {
+ cout<<"podaj A["<<i<<"]=";
+ cin>>a[i];
+ if ((a[i])>0){
+ L_wieksze++;}
+ 
+ if (a[i]==0){
+ L_rowne++;}
+ 
+ if ((a[i])<0){
+ L_mniejsze++;}
+ }
+ cout<<"Liczb mniejszych od zera jest="<<L_mniejsze<<endl;
+ cout<<"Liczb wiekszych od zera jest="<<L_wieksze<<endl;
+ cout<<"Liczb rowne zero jest="<<L_rowne<<endl;
+ system("PAUSE");
+}
+</textarea>
+   </body>
+   </html>
